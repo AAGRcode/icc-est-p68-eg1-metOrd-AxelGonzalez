@@ -29,6 +29,7 @@ public class App {
      * 
      * @return Array de películas sin ordenar
      */
+    //terminado
     public static Movie[] generateMoviesList() {
         Movie[] movies = new Movie[25];
         movies[0] = new Movie("Inception", 2010);
