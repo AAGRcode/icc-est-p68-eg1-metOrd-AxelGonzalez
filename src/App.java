@@ -8,7 +8,19 @@ public class App {
         // ordenar la lista de películas por título utilizando el método sortByTitle del
         // MovieController
         // imprimir la lista de películas ordenada
+        Movie[] peliculas = generateMoviesList();
+        for(Movie mov:peliculas){
+            System.out.println(mov);
+        }
+        System.out.println();
+        System.out.println("Ordenamiento por titulo: ");
+        
+        MovieController controller = new MovieController();
+        controller.sortByTitle(peliculas);
 
+        for(Movie peli: peliculas){
+            System.out.println(peli);
+        }
     }
 
     /**
